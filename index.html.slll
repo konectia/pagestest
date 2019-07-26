@@ -21,9 +21,10 @@
         <p>This library should be already configured in your jenkins tenant instance ([try this to check if it is working](check-library)),
  so you just have to reference the library at the beginning of your Jenkinsfile of your pipeline jenkins project or multi-branch jenkins projects (Branch Sources Github):
 
- ```groovy
+
+        {% highlight groovy %}
     @Library('global-alm-pipeline-library') _
-``` 
+    {% endhighlight %}
         </p>
         <p>This library includes a collection of steps and predefined pipelines to be used in the ALM Multicloud instances, so it expects some Jenkins plugins and slaves preconfigured. You can run the best practice Jenkins pipelines out of the box, take them as a starting point for project-specific adaptations or implement your own pipelines from scratch using the shared library.</p>
 
